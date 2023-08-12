@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #0034c252;
+    font-size: 15px;
+    line-height: 1.5;
+    box-sizing: border-box;
+}
+.caja {
+    width: 620px;
+    height: auto;
+    margin: 100px auto;
+    background-color: #eee;
+}
+.base {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    display: block;
+    float: none;
+}
+.base h2 {
+    font-size: 26px;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: normal;
+    margin-top: 0px;
+    box-shadow: 0px 2px #bababa;
+    background: white;
+    font-size: 34px;
+    color: navy;
+}
+
+.titulo {
+    font-size: 20px;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: normal;
+    line-height: 0.5;
+    letter-spacing: 0.5px;
+    word-spacing: 2.7px;
+    color: #0e29c0;
+}
+input[type="number"] {
+    width: 560px;
+    text-align: center;
+    margin: auto;
+    outline: none;
+    min-height: 20px;
+    border: 2px solid #000000;
+    padding: 12px;
+    background-color: #f7f7f7;
+    border-radius: 2px;
+    color: #312ee6;
+    font-size: 17px;
+    margin: 10px; /* Le agrego margen*/
+}
+input[type="number"]:focus {
+    background-color: #ffffff;
+    border: 2px solid orange;
+    outline: none;
+}
+input[type="button"] {
+    width: 200px;
+    margin-left: 35%;
+    margin-top: 40px;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    background-color: #002f6d;
+    color: #ffffff;
+    padding: 14px 16px;
+    text-align: center;
+    font-size: 16px;
+}
+
+input[type="button"]:hover {
+    background-color: #0043d3;
+}
+
+#resultado { /* Copie formato del cuadro de texto de los numeros*/
+    width: 560px;
+    text-align: center;
+    margin: 10px; 
+    outline: none;
+    min-height: 20px;
+    border: 2px solid #000000;
+    padding: 12px;
+    background-color: #f7f7f7;
+    border-radius: 2px;
+    color: #312ee6;
+    font-size: 17px;
+}
+
+#op {
+    width: 200px; /* Ancho del select */
+    padding: 10px; /* Espacio interno */
+    font-size: 16px; /* Tamaño de fuente */
+    border: 1px solid #ccc; /* Borde */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: #f2f2f2; /* Color de fondo */
+    color: #333; /* Color del texto */
+    text-align: center;
+    margin-left: 35%;
+    margin-top: 25px;
+}
+
