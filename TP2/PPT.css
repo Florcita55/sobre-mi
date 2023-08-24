@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, Helvetica, sans-serif; /* Fuente de texto*/
+    background-color: #0034c252; /* color*/
+    font-size: 15px; /* Tamaño de fuente*/
+    line-height: 1.5; /* Altura de la linea de texto. Para controlar el espacio entre las lienas del texto*/
+    box-sizing: border-box; /*Afecta al modelo de caja del elemento*/
+}
+.caja {
+    width: 620px; /* Ancho del elemento.*/
+    height: auto; /* Altura del elemento. Al utilizarla en auto, el elemento se ajustará automáticamente en altura para adaptarse a su contenido.*/
+    margin: 100px auto; /*Márgenes exteriores del elemento*/
+    background-color: #eee; 
+}
+h2 {
+    font-size: 40%;
+    text-align: center;
+    font-family: sans-serif; /*Fuente de texto*/
+    font-weight: normal; /*Este estilo controla el grosor (peso) de la fuente del contenido.*/
+    margin-top: 20px; /*el margen superior del elemento */
+    box-shadow: 0px 2px #bababa; /*Este estilo aplica una sombra alrededor del elemento. */
+    background: white;
+    font-size: 34px;
+    color: navy;
+}
+input[type="text"] {
+    width: 560px;
+    text-align: center;
+    margin: auto;
+    min-height: 20px; 
+    border: 2px solid #000000;
+    padding: 12px; /* Esta propiedad establece el espacio de relleno alrededor del contenido dentro de un elemento. En este caso, se está aplicando un espacio de relleno de 12 píxeles en todas las direcciones (arriba, abajo, izquierda y derecha) alrededor del contenido del elemento. El contenido se separará del borde del elemento por este espacio de relleno.*/
+    background-color: #f7f7f7;
+    border-radius: 2px; /* Esta propiedad establece el radio de las esquinas del borde de un elemento, lo que crea un efecto de esquinas redondeadas*/
+    color: #312ee6;
+    font-size: 17px;
+    margin: 10px; /* Le agrego margen*/
+}
+input[type="text"]:focus {
+    background-color: #ffffff;
+    border: 2px solid rgb(0, 60, 255);
+    outline: none;
+}    
