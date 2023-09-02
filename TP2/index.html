@@ -5,17 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Piedra, papel y tijeras</title>
     <link rel="stylesheet" href="PPT.css" /> 
-    <script src = "ppt.js"></script>
+    
 </head>
 <body>
-     <h2>Piedra, papel o tijeras </h2>
-<div class="caja">
-    <form>
-        <input type="text" id="jugador" name= "Nombre del jugador" placeholder="Nombre del jugador" />
-        <input type="button" value="Piedra" onclick="piedra()"/>
-        <input type="button" value="Papel" onclick="papel()"/>
-        <input type="button" value="Tijeras" onclick="tijeras()"/>
-    </form>
-</div>    
+    <div class="caja">
+        <form>
+            <div class="base">
+                <h2>Piedra, Papel o tijeras </h2>
+
+                <p class="titulo">Nombre del jugador:</p>
+                <input type="text" id="nombre" name= "nombre" required/>
+
+                <p class="titulo">Tu jugada:</p>  
+                <div    class="jugadas">
+                    <button type="button" id="piedra">
+                        <img src="/cursoFrontEnd/sobre-mi/TP2/Multimedia/piedra feliz.jpg" 
+                        width="140px"
+                        height= "140px"
+                        alt="piedra">Piedra
+                    </button>
+                    <button type="button" id="papel">
+                        <img src="/cursoFrontEnd/sobre-mi/TP2/Multimedia/papel feliz.png" 
+                        width="140px"
+                        height="140px"
+                        alt="papel">Papel
+                    </button>
+
+                    <button type="button" id="tijeras">
+                        <img src="/cursoFrontEnd/sobre-mi/TP2/Multimedia/tijera feliz.jpg" 
+                        width="140px"
+                        height="140px"
+                        alt="tijeras">Tijeras
+                    </button>
+
+                <div id ="res"></div>  
+
+                </div>
+                <p class="contador">Vos: <span id="jugadorCount">0</span></p>
+                <p class="contador">Computadora: <span id="pcCount">0</span></p>
+                <button id="reiniciar">Reiniciar</button>
+
+                
+        
+            </div>
+        </form>
+    </div>
+    <script src = "ppt.js"></script>
 </body>
 </html>
