@@ -1,6 +1,6 @@
 body {
     font-family: Arial, Helvetica, sans-serif; /* Fuente de texto*/
-    background-color: #0034c252; /* color*/
+    background-color: #056e2d52; /* color*/
     font-size: 15px; /* Tamaño de fuente*/
     line-height: 1.5; /* Altura de la linea de texto. Para controlar el espacio entre las lienas del texto*/
     box-sizing: border-box; /*Afecta al modelo de caja del elemento*/
@@ -26,7 +26,7 @@ body {
     box-shadow: 0px 2px #bababa; /*Este estilo aplica una sombra alrededor del elemento. */
     background: white;
     font-size: 34px;
-    color: navy;
+    color: rgb(0, 128, 38);
 }
 
 .titulo {
@@ -37,7 +37,7 @@ body {
     line-height: 0.5; 
     letter-spacing: 0.5px; /* Este estilo establece el espaciado entre caracteres (letras) dentro del contenido del elemento*/
     word-spacing: 2.7px; /*: Este estilo establece el espaciado entre palabras dentro del contenido del elemento. */
-    color: #0e29c0;
+    color: #096418;
 }
 input[type="text"] {
     width: 560px;
@@ -48,13 +48,13 @@ input[type="text"] {
     padding: 12px; /* Esta propiedad establece el espacio de relleno alrededor del contenido dentro de un elemento. En este caso, se está aplicando un espacio de relleno de 12 píxeles en todas las direcciones (arriba, abajo, izquierda y derecha) alrededor del contenido del elemento. El contenido se separará del borde del elemento por este espacio de relleno.*/
     background-color: #f7f7f7;
     border-radius: 5px; /* Esta propiedad establece el radio de las esquinas del borde de un elemento, lo que crea un efecto de esquinas redondeadas*/
-    color: #312ee6;
+    color: #15662d;
     font-size: 17px;
     margin: 10px; /* Le agrego margen*/
 }
 input[type="text"]:focus {
     background-color: #ffffff;
-    border: 2px solid rgb(0, 60, 255);
+    border: 2px solid rgb(7, 150, 26);
 
 }
 
@@ -67,7 +67,7 @@ input[type="text"]:focus {
     padding: 12px;
     background-color: #f7f7f7;
     border-radius: 5px;
-    color: #312ee6;
+    color: #3a882a;
     font-size: 17px;
 }
 
@@ -76,7 +76,7 @@ input[type="text"]:focus {
     margin-left: 35%;
     margin-top: 10px;
     border-radius: 5px;
-    background-color: #002f6d;
+    background-color: #006d05e7;
     color: #ffffff;
     padding: 14px 16px;
     text-align: center;
@@ -88,3 +88,18 @@ input[type="text"]:focus {
     margin-top: 10px;
 }
 
+
+#piedra:hover{
+background: green;
+transition: background-color 2s;
+}
+
+#papel:hover{
+    background: green;
+    transition: background-color 2s;
+}
+
+#tijeras:hover{
+    background: green;
+    transition: background-color 2s;
+}

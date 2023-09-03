@@ -10,8 +10,8 @@ $botonPiedra.addEventListener("click", () => jugar("piedra"));
 let $botonPapel = document.getElementById("papel");
 $botonPapel.addEventListener("click", () => jugar("papel"));
 
-let $botonTijeras = document.getElementById("tijeras");
-$botonTijeras.addEventListener("click", () => jugar("tijeras"));
+let $botonTijera = document.getElementById("tijera");
+$botonTijera.addEventListener("click", () => jugar("tijera"));
 
 
 let jugadorCount = 0;
@@ -31,34 +31,29 @@ function obtenerJugadaComputadora() {
     } else if (numAleatorio === 1){
         return "papel";
     }else if (numAleatorio === 2){
-        return "tijeras";
+        return "tijera";
     }
 }
 
 function jugar(id){
 jUsuario= id;
 jComputadora = obtenerJugadaComputadora();
-console.log("Jugador" + jUsuario);
-console.log("Computadora" + jComputadora);
 determinarGanador(jUsuario, jComputadora);
 }
 
 function determinarGanador(jUsuario, jComputadora){
     if (jComputadora ===  jUsuario){
-        console.log("Empate");
         document.getElementById("res").innerHTML = "Empate";
     }
     else if (
-        (jComputadora ===  "piedra" && jUsuario === "tijeras") ||
-        (jComputadora ===  "tijeras" && jUsuario === "papel") ||
+        (jComputadora ===  "piedra" && jUsuario === "tijera") ||
+        (jComputadora ===  "tijera" && jUsuario === "papel") ||
         (jComputadora ===  "papel" && jUsuario === "piedra")
     ){
-         console.log("Gana la PC");
          pcCount++;
          $puntajePC.innerHTML = pcCount;
          document.getElementById("res").innerHTML = "Gana la PC";
     } else {
-        console.log("Gana JUGADOR");
         jugadorCount++; 
         $puntajeJugador.innerHTML = jugadorCount; 
         document.getElementById("res").innerHTML = "Gana " + $nombreJugador.value; 
